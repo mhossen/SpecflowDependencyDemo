@@ -9,7 +9,7 @@ document
     if (username === "admin" && password === "password") {
       // Redirect to Home Page
       sessionStorage.setItem("username", username);
-      window.location.href = "/views/index.html";
+      window.location.href = "../Sample/views/index.html";
     } else {
       alert("Invalid username or password");
     }

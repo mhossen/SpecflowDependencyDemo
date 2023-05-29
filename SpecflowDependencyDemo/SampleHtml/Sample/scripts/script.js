@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Load the navigation bar
-  $("#navbar-placeholder").load("navbar.html");
+  $("#navbar-placeholder").load("..../Sample/views/navbar.html"); ///vie  SampleHtml/views/navbar.html
 });
 
 $(document).ready(function () {
