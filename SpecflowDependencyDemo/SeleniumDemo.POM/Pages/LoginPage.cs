@@ -1,6 +1,12 @@
 ﻿namespace SeleniumDemo.POM.Pages;
 
-public class LoginPage : BasePage
+public interface ILoginPage
+{
+  void NavigateToLoginPage();
+  void Login(string username, string password);
+}
+
+internal class LoginPage : BasePage, ILoginPage
 {
   private IWebElement UserName => Driver.FindElement(By.Id("username"));
   private IWebElement Password => Driver.FindElement(By.Id("password"));

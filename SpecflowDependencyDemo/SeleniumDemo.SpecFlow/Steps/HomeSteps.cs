@@ -3,14 +3,17 @@
 [Binding]
 public sealed class HomeSteps : StepBase
 {
-  public HomeSteps(IObjectContainer container) : base(container)
+  private readonly IHomePage _homePage;
+
+  public HomeSteps(IObjectContainer container, IHomePage homePage) : base(container)
   {
+    _homePage = homePage;
   }
 
   [Then(@"I verify home page has header '(.*)'")]
   public void ThenIVerifyHomePageHasHeader(string header)
   {
-    var headerText = GetPage<HomePage>().HeaderText;
+    var headerText = _homePage.HeaderText;
     headerText.Should().Be("Welcome to Sample Website");
   }
 }

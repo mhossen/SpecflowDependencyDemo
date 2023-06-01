@@ -1,6 +1,11 @@
 ﻿namespace SeleniumDemo.POM.Pages;
 
-public class HomePage : BasePage
+public interface IHomePage
+{
+  string HeaderText { get; }
+}
+
+internal class HomePage : BasePage, IHomePage
 {
   private IWebElement HomePageHeader => Driver.FindElement(By.CssSelector("h1"));
 

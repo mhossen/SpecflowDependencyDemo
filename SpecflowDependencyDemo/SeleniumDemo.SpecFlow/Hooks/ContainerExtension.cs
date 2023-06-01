@@ -11,8 +11,11 @@ public static class ContainerExtension
 
     Parallel.ForEach(derivedTypes, derivedType =>
     {
+      var @interface = derivedType.GetInterfaces().FirstOrDefault(i => i.Name == $"I{derivedType.Name}");
+      if (@interface == null) return;
+
       var obj = Activator.CreateInstance(derivedType, args);
-      container.RegisterInstanceAs(obj);
+      container.RegisterInstanceAs(obj, @interface);
     });
   }
 }

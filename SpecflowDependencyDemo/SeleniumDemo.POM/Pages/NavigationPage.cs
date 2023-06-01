@@ -1,6 +1,11 @@
 ﻿namespace SeleniumDemo.POM.Pages;
 
-public class NavigationPage : BasePage
+public interface INavigationPage
+{
+  void GoToPage(string pageName);
+}
+
+internal class NavigationPage : BasePage, INavigationPage
 {
   public NavigationPage(IWebDriver driver) : base(driver)
   {
