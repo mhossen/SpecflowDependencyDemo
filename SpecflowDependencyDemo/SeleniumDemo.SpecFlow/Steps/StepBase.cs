@@ -8,9 +8,4 @@ public abstract class StepBase : TechTalk.SpecFlow.Steps
   {
     Container = container;
   }
-
-  protected TPage GetPage<TPage>() where TPage : BasePage
-  {
-    return Container.Resolve<TPage>();
-  }
 }

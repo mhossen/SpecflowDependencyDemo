@@ -3,19 +3,22 @@
 [Binding]
 public class LoginSteps : StepBase
 {
-  public LoginSteps(IObjectContainer container) : base(container)
+  private readonly ILoginPage _loginPage;
+
+  public LoginSteps(IObjectContainer container, ILoginPage loginPage) : base(container)
   {
+    _loginPage = loginPage;
   }
 
   [Given(@"I navigate to login page")]
   public void GivenINavigateToLoginPage()
   {
-    GetPage<LoginPage>().NavigateToLoginPage();
+    _loginPage.NavigateToLoginPage();
   }
 
   [Given(@"I provide '(.*)' and '(.*)'")]
   public void GivenIProvide(string username, string password)
   {
-    GetPage<LoginPage>().Login(username, password);
+    _loginPage.Login(username, password);
   }
 }
