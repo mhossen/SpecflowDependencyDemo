@@ -2,76 +2,76 @@
 <html>
 
 <head>
-  <title>Add User</title>
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../styles/style.css">
-  <style>
-    /* CSS to move content to the right of the navbar */
-    .container {
-      display: flex;
-    }
+    <title>Add User</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <style>
+        /* CSS to move content to the right of the navbar */
+        .container {
+            display: flex;
+        }
 
-    #navbar-placeholder {
-      width: 200px;
-    }
+        #navbar-placeholder {
+            width: 200px;
+        }
 
-    #content {
-      flex-grow: 1;
-      padding-left: 20px;
-    }
-  </style>
+        #content {
+            flex-grow: 1;
+            padding-left: 20px;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container">
+<div class="container">
     <div id="navbar-placeholder">
-      <nav>
-        <ul>
-          <li><a href="../views/index.html">Home</a></li>
-          <li><a href="../views/add-user.html">Add User</a></li>
-          <li><a href="../views/transactions.html">Transactions</a></li>
-          <!-- Add more navigation links as needed -->
-        </ul>
-      </nav>
+        <nav>
+            <ul>
+                <li><a href="../views/index.html">Home</a></li>
+                <li><a href="../views/add-user.html">Add User</a></li>
+                <li><a href="../views/transactions.html">Transactions</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
     </div>
     <div id="content">
-      <header>
-        <h1>Add User</h1>
-      </header>
+        <header>
+            <h1>Add User</h1>
+        </header>
 
-      <form id="user-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
+        <form id="user-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
 
-        <input type="submit" value="Add User">
-      </form>
+            <input type="submit" value="Add User">
+        </form>
 
-      <table id="user-table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John Doe</td>
-            <td>johndoe@example.com</td>
-          </tr>
-          <tr>
-            <td>Jane Smith</td>
-            <td>janesmith@example.com</td>
-          </tr>
-        </tbody>
-      </table>
+        <table id="user-table">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="../scripts/script.js"></script>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../scripts/script.js"></script>
 </body>
 
 </html>

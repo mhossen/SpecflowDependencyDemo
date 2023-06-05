@@ -20,8 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\SampleHtml\SampleHtml.csproj"/>
-        <ProjectReference Include="..\SeleniumDemo.POM\SeleniumDemo.POM.csproj"/>
+        <ProjectReference Include="..\Playwright.POM\Playwright.POM.csproj"/>
     </ItemGroup>
 
 </Project>

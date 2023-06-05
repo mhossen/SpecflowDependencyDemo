@@ -22,7 +22,7 @@ internal class LoginPage : BasePage, ILoginPage
     var parent = Directory.GetParent(location);
     Driver.Navigate().GoToUrl(@$"{parent}\Sample\login.html");
   }
-  
+
   public void Login(string username, string password)
   {
     UserName.SendKeys(username);

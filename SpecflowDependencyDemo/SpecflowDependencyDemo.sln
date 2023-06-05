@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumDemo.POM", "Seleniu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumDemo.SpecFlow", "SeleniumDemo.SpecFlow\SeleniumDemo.SpecFlow.csproj", "{6EDBF251-B072-4493-BDF1-B91141855E47}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playwright.POM", "Playwright.POM\Playwright.POM.csproj", "{53174B35-4C9B-4D9F-A5F9-989E3F728189}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playwright.Specflow", "Playwright.Specflow\Playwright.Specflow.csproj", "{7A1E6AA1-54DF-49EB-BE87-10CE2184990E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{6EDBF251-B072-4493-BDF1-B91141855E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EDBF251-B072-4493-BDF1-B91141855E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EDBF251-B072-4493-BDF1-B91141855E47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53174B35-4C9B-4D9F-A5F9-989E3F728189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53174B35-4C9B-4D9F-A5F9-989E3F728189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53174B35-4C9B-4D9F-A5F9-989E3F728189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53174B35-4C9B-4D9F-A5F9-989E3F728189}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A1E6AA1-54DF-49EB-BE87-10CE2184990E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1E6AA1-54DF-49EB-BE87-10CE2184990E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1E6AA1-54DF-49EB-BE87-10CE2184990E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1E6AA1-54DF-49EB-BE87-10CE2184990E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
